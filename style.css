@@ -1,0 +1,42 @@
+body{
+  font-size: 20px;
+  font-family: Sans-Serif;
+  margin: 0%;
+}
+
+.hero{
+    height:100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://artline.ua/storage/images/editor/editor_1598866223599203_0.jpg");
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#00bfff;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:5px;
+    font-size:18px;
+}
+
+.btn:hover{
+    background:#009acd;
+}
