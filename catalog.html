@@ -1,26 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Каталог товарів | JVCRPT</title>
+    <link rel="stylesheet" href="catalog.css">
 </head>
 <body>
-    
     <header class="header">
-
         <div class="container">
             <div class="header-top">
-                <img src="logoJVCRPT.svg" alt="" class="header-top-logo">
+                <img src="logoJVCRPT.svg" alt="JVCRPT Logo" class="header-top-logo">
 
                 <nav class="nav">
-                    <a href="#" class="nav-link"><img src="homepage.png">Головна сторінка</a>
-                    <a href="#" class="nav-link"><img src="catalog.png">Каталог</a>
+                    <a href="/homepage.html#" class="nav-link">
+                        <img src="homepage.png" alt="">Головна сторінка
+                    </a>
+                    <a href="/catalog.html#" class="nav-link">
+                        <img src="catalog.png" alt="">Каталог
+                    </a>
                 </nav>
             </div>
         </div>
-
     </header>
 
+    <main class="catalogPage">
+        <div class="container">
+            <h1 class="catalog-title">Каталог товарів</h1>
+            <p class="catalog-description">Обирайте з нашої широкої колекції якісних товарів</p>
+
+            <!-- категории -->
+            <div class="filters">
+                <div class="filter-row">
+                    <div class="filter-group">
+                        <label for="category">Категорія</label>
+                        <select id="category" class="filter-select">
+                            <option value="all">Всі категорії</option>
+                            <option value="laptops">Ноутбуки</option>
+                            <option value="phones">Телефони</option>
+                            <option value="watches">Годинники</option>
+                            <option value="headphones">Навушники</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="price">Ціна</label>
+                        <select id="price" class="filter-select">
+                            <option value="all">Всі ціни</option>
+                            <option value="0-5000">до 5000 грн</option>
+                            <option value="5000-15000">5000 - 15000 грн</option>
+                            <option value="15000-30000">15000 - 30000 грн</option>
+                            <option value="30000+">понад 30000 грн</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="sort">Сортування</label>
+                        <select id="sort" class="filter-select">
+                            <option value="popular">За популярністю</option>
+                            <option value="price-asc">Від дешевих до дорогих</option>
+                            <option value="price-desc">Від дорогих до дешевих</option>
+                            <option value="new">Новинки</option>
+                        </select>
+                    </div>
+
+                    <button class="filter-button">Застосувати</button>
+                </div>
+            </div>
+
+            <!-- список товаров -->
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="laptop.png" alt="Ноутбук Dell XPS">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ноутбуки</span>
+                        <h3 class="product-title">Ноутбук Dell XPS 15</h3>
+                        <p class="product-description">Потужний ноутбук для роботи та розваг, 16GB RAM, 512GB SSD</p>
+                        <div class="product-price-block">
+                            <span class="product-price">52 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="laptop2.png" alt="Ноутбук MacBook Pro">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ноутбуки</span>
+                        <h3 class="product-title">MacBook Pro 14"</h3>
+                        <p class="product-description">Чіп M3, 16GB RAM, 1TB SSD, неймовірна продуктивність</p>
+                        <div class="product-price-block">
+                            <span class="product-price">74 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="phone.png" alt="Смартфон iPhone 15">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Телефони</span>
+                        <h3 class="product-title">iPhone 15 Pro</h3>
+                        <p class="product-description">6.1" дисплей, потрійна камера, A17 Pro чіп</p>
+                        <div class="product-price-block">
+                            <span class="product-price">45 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="phone2.png" alt="Смартфон Samsung S24">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Телефони</span>
+                        <h3 class="product-title">Samsung Galaxy S24 Ultra</h3>
+                        <p class="product-description">6.8" Dynamic AMOLED, S Pen, 200MP камера</p>
+                        <div class="product-price-block">
+                            <span class="product-price">49 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="watch.png" alt="Розумний годинник Apple Watch">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Годинники</span>
+                        <h3 class="product-title">Apple Watch Series 9</h3>
+                        <p class="product-description">Відстеження здоров'я, сповіщення, заряд на 18 год</p>
+                        <div class="product-price-block">
+                            <span class="product-price">16 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="watch2.png" alt="Розумний годинник Samsung Watch">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Годинники</span>
+                        <h3 class="product-title">Samsung Galaxy Watch6</h3>
+                        <p class="product-description">Вимірювання сну, пульсу, спортивні режими</p>
+                        <div class="product-price-block">
+                            <span class="product-price">12 499 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="headphones.png" alt="Навушники AirPods Max">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Навушники</span>
+                        <h3 class="product-title">AirPods Max</h3>
+                        <p class="product-description">Повнорозмірні навушники з активним шумозаглушенням</p>
+                        <div class="product-price-block">
+                            <span class="product-price">22 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="headphones2.png" alt="Навушники Sony WH-1000XM5">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Навушники</span>
+                        <h3 class="product-title">Sony WH-1000XM5</h3>
+                        <p class="product-description">Найкраще шумозаглушення, 30 год роботи</p>
+                        <div class="product-price-block">
+                            <span class="product-price">14 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- типа страницы каталога -->
+            <div class="pagination">
+                <a href="#" class="pagination-link active">1</a>
+                <a href="#" class="pagination-link">2</a>
+                <a href="#" class="pagination-link">3</a>
+                <a href="#" class="pagination-link">4</a>
+                <a href="#" class="pagination-link">5</a>
+                <a href="#" class="pagination-link">Наступна</a>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
