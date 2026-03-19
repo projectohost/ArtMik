@@ -40,7 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
             'laptops': 'Ноутбуки',
             'phones': 'Телефони',
             'watches': 'Годинники',
-            'headphones': 'Навушники'
+            'headphones': 'Навушники',
+            'pc': 'ПК'
         };
         
         const selectedCategory = categoryMap[category];
