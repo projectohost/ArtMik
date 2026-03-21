@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товарів | JVCRPT</title>
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <img src="logoJVCRPT.svg" alt="JVCRPT Logo" class="header-top-logo">
+
+                <nav class="nav">
+                    <a href="/homepage.html#" class="nav-link">
+                        <img src="homepage.png" alt="">Головна сторінка
+                    </a>
+                    <a href="/catalog.html#" class="nav-link">
+                        <img src="pics/catalog.png" alt="">Каталог
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="catalogPage">
+        <div class="container">
+            <h1 class="catalog-title">Каталог товарів</h1>
+            <p class="catalog-description">Обирайте з нашої широкої колекції якісних товарів</p>
+
+            <!-- категории -->
+            <div class="filters">
+                <div class="filter-row">
+                    <div class="filter-group">
+                        <label for="category">Категорія</label>
+                        <select id="category" class="filter-select">
+                            <option value="all">Всі категорії</option>
+                            <option value="laptops">Ноутбуки</option>
+                            <option value="phones">Телефони</option>
+                            <option value="watches">Годинники</option>
+                            <option value="headphones">Навушники</option>
+                            <option value="pc">ПК</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="price">Ціна</label>
+                        <select id="price" class="filter-select">
+                            <option value="all">Всі ціни</option>
+                            <option value="0-5000">до 5000 грн</option>
+                            <option value="5000-15000">5000 - 15000 грн</option>
+                            <option value="15000-30000">15000 - 30000 грн</option>
+                            <option value="30000+">понад 30000 грн</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="sort">Сортування</label>
+                        <select id="sort" class="filter-select">
+                            <option value="popular">За популярністю</option>
+                            <option value="price-asc">Від дешевих до дорогих</option>
+                            <option value="price-desc">Від дорогих до дешевих</option>
+                            <option value="new">Новинки</option>
+                        </select>
+                    </div>
+
+                    <button class="filter-button">Застосувати</button>
+                </div>
+            </div>
+
+            <!-- список товаров -->
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/laptop.png" alt="Ноутбук Dell XPS">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ноутбуки</span>
+                        <h3 class="product-title">Ноутбук Dell XPS 15</h3>
+                        <p class="product-description">Потужний ноутбук для роботи та розваг, 16GB RAM, 512GB SSD</p>
+                        <div class="product-price-block">
+                            <span class="product-price">52 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/laptop2.png" alt="Ноутбук MacBook Pro">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ноутбуки</span>
+                        <h3 class="product-title">MacBook Pro 14"</h3>
+                        <p class="product-description">Чіп M3, 16GB RAM, 1TB SSD, неймовірна продуктивність</p>
+                        <div class="product-price-block">
+                            <span class="product-price">74 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/laptop3.png" alt="Ноутбук ігровий Lenovo LOQ 15ARP9 Luna Grey">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ноутбуки</span>
+                        <h3 class="product-title">Lenovo LOQ 15ARP9 Luna Grey</h3>
+                        <p class="product-description">Чіп Ryzen 5 7235HS, 16GB RAM, 512GB SSD, 15,6" дисплей, GeForce RTX 3050</p>
+                        <div class="product-price-block">
+                            <span class="product-price">36 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/laptop4.png" alt="Ноутбук ігровий Lenovo LOQ Essential 15IRX11 Luna Grey">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ноутбуки</span>
+                        <h3 class="product-title">Lenovo LOQ Essential 15IRX11 Luna Grey</h3>
+                        <p class="product-description">Чіп IntelCore i5-13450HX, 16GB RAM, 512GB SSD, 15,6" дисплей, GeForce RTX 5060</p>
+                        <div class="product-price-block">
+                            <span class="product-price">55 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/pc.png" alt="Системний блок Expert PC Ultimate (A5600.32.S10.5060.A6344)">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">ПК</span>
+                        <h3 class="product-title">Expert PC Ultimate (A5600.32.S10.5060.A6344)</h3>
+                        <p class="product-description">Чіп Ryzen 5 5600, 32GB RAM, 1TB SSD, GeForce RTX 5060 8GB</p>
+                        <div class="product-price-block">
+                            <span class="product-price">47 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/pc2.png" alt="Системний блок Expert PC Ultimate (A5600.32.S1.5060T.A6307)">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">ПК</span>
+                        <h3 class="product-title">Expert PC Ultimate (A5600.32.S1.5060T.A6307)</h3>
+                        <p class="product-description">Чіп Ryzen 5 5600, 32GB RAM, 1TB SSD, GeForce RTX 5060 Ti 8GB</p>
+                        <div class="product-price-block">
+                            <span class="product-price">55 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/phone.png" alt="Смартфон iPhone 15">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Телефони</span>
+                        <h3 class="product-title">iPhone 15 Pro</h3>
+                        <p class="product-description">6.1" дисплей, потрійна камера, A17 Pro чіп</p>
+                        <div class="product-price-block">
+                            <span class="product-price">45 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/phone2.png" alt="Смартфон Samsung S24">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Телефони</span>
+                        <h3 class="product-title">Samsung Galaxy S24 Ultra</h3>
+                        <p class="product-description">6.8" Dynamic AMOLED, S Pen, 200MP камера</p>
+                        <div class="product-price-block">
+                            <span class="product-price">49 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/phone3.png" alt="Смартфон Xiaomi Redmi 15C 8/256Gb Midnight Black">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Телефони</span>
+                        <h3 class="product-title">Xiaomi Redmi 15C 8/256Gb Midnight Black</h3>
+                        <p class="product-description">6,9" дисплей, подвійна камера</p>
+                        <div class="product-price-block">
+                            <span class="product-price">5 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/phone4.png" alt="Смартфон OPPO A6 Pro 8/256Gb Stellar Blue">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Телефони</span>
+                        <h3 class="product-title">OPPO A6 Pro 8/256Gb Stellar Blue</h3>
+                        <p class="product-description">6,57" дисплей, подвійна камера</p>
+                        <div class="product-price-block">
+                            <span class="product-price">13 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/phone5.png" alt="Смартфон Apple iPhone 17e 256Gb Soft Pink">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Телефони</span>
+                        <h3 class="product-title">Apple iPhone 17e 256Gb Soft Pink</h3>
+                        <p class="product-description">6.1" дисплей, A19 чіп</p>
+                        <div class="product-price-block">
+                            <span class="product-price">34 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/phone6.png" alt="Смартфон Samsung Galaxy A36 5G 8/256Gb Awesome Black">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Телефони</span>
+                        <h3 class="product-title">Samsung Galaxy A36 5G 8/256Gb Awesome Black</h3>
+                        <p class="product-description">6,7" дисплей, потрійна камера, Qualcomm Snapdragon 6 Gen 3 чіп</p>
+                        <div class="product-price-block">
+                            <span class="product-price">14 899 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/watch.png" alt="Розумний годинник Apple Watch">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Годинники</span>
+                        <h3 class="product-title">Apple Watch Series 9</h3>
+                        <p class="product-description">Відстеження здоров'я, сповіщення, заряд на 18 год</p>
+                        <div class="product-price-block">
+                            <span class="product-price">16 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/watch2.png" alt="Розумний годинник Samsung Watch">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Годинники</span>
+                        <h3 class="product-title">Samsung Galaxy Watch6</h3>
+                        <p class="product-description">Вимірювання сну, пульсу, спортивні режими</p>
+                        <div class="product-price-block">
+                            <span class="product-price">12 499 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/headphones.png" alt="Навушники AirPods Max">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Навушники</span>
+                        <h3 class="product-title">AirPods Max</h3>
+                        <p class="product-description">Повнорозмірні навушники з активним шумозаглушенням</p>
+                        <div class="product-price-block">
+                            <span class="product-price">22 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/headphones2.png" alt="Навушники Sony WH-1000XM5">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Навушники</span>
+                        <h3 class="product-title">Sony WH-1000XM5</h3>
+                        <p class="product-description">Найкраще шумозаглушення, 30 год роботи</p>
+                        <div class="product-price-block">
+                            <span class="product-price">14 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/headphones3.png" alt="Навушники HyperX Cloud Stinger 2 Core Wired">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Навушники</span>
+                        <h3 class="product-title">HyperX Cloud Stinger 2 Core Wired</h3>
+                        <p class="product-description">Гарнітура дротова ігрова</p>
+                        <div class="product-price-block">
+                            <span class="product-price">1 800 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pics/headphones4.png" alt="Навушники Logitech G321 LightSpeed White">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Навушники</span>
+                        <h3 class="product-title">Logitech G321 LightSpeed White</h3>
+                        <p class="product-description">Гарнітура бездротова ігрова</p>
+                        <div class="product-price-block">
+                            <span class="product-price">2 999 грн</span>
+                            <button class="product-button">В кошик</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- страницы сами генерируются с помощью javascript -->
+            <div class="pagination">
+                
+            </div>
+        </div>
+    </main>
+    <script src="catalog.js"></script>
+</body>
+</html>
