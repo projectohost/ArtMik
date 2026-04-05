@@ -13,11 +13,11 @@
                 <img src="logoJVCRPT.svg" alt="JVCRPT Logo" class="header-top-logo">
 
                 <nav class="nav">
-                    <a href="/index.html#" class="nav-link">
-                        <img src="homepage.png" alt="">Головна сторінка
+                    <a href="./index.html#" class="nav-link">
+                        <img src="./homepage.png" alt="">Головна сторінка
                     </a>
-                    <a href="/catalog.html#" class="nav-link">
-                        <img src="pics/catalog.png" alt="">Каталог
+                    <a href="./catalog.html#" class="nav-link">
+                        <img src="./pics/catalog.png" alt="">Каталог
                     </a>
                 </nav>
             </div>
@@ -127,6 +127,65 @@
   <div class="footer-bottom">
     <p>© 2026 Всі права захищені</p>
   </div>
+  <!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>PC Store</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 1s ease-in-out;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding-top: 20%;
+            background: rgba(0, 0, 0, 0.5); /* затемнення */
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <h1>Ласкаво просимо в PC Store</h1>
+    <p>Кращі комп'ютери та комплектуючі</p>
+</div>
+
+<script>
+    const images = [
+        "images/pc1.jpg",
+        "images/pc2.jpg",
+        "images/pc3.jpg",
+        "images/pc4.jpg"
+    ];
+
+    let index = 0;
+
+    function changeBackground() {
+        document.body.style.backgroundImage = url('${images[index]}');
+        index = (index + 1) % images.length;
+    }
+
+    // перший запуск
+    changeBackground();
+
+    // змінювати кожні 5 секунд
+    setInterval(changeBackground, 5000);
+</script>
+
+</body>
+</html>
 </footer>
 </section>
 </section>
